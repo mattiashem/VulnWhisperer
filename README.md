@@ -23,6 +23,7 @@ You also need to have a logstash running localy to read the vilwisperer logs and
 telnet IP_OPENVAS 4000
 ```
 You should get a connections_establish
+If we cant get a connections we need to find the port for openvas
 
 
 ## Install 
