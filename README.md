@@ -1,4 +1,4 @@
-# VilWisperer install for ubuntu 18.04 and openvas
+# VulWisperer install for ubuntu 18.04 and openvas
 This will install the vilWisperer on a ubuntu 18.04 server.
 Config to connect to a openvas serve to get reports and save to local disk.
 
@@ -216,7 +216,7 @@ output {
 ```
 
 Here at the end of the file you can controll the output to elastic.
-If you can merge this into your running logstash. You can start a secound logstash to read the files and send them to elastic
+If you cant merge this into your running logstash. You can start a secound logstash to read the files and send them to elastic
 
 ```
 logstash -f logstash-openvas.conf
