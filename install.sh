@@ -27,14 +27,15 @@ export OPENVAS_PASSWORD=$openvas_pass
 
 #Installing vulwisperer
 export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install tzdata  -y
-apt-get update && apt-get install gettext-base wget zlib1g-dev libxml2-dev libxslt1-dev git python python-pip -y
+apt-get update && apt-get install python-setuptools cython  gettext-base wget zlib1g-dev libxml2-dev libxslt1-dev git python python3-pip -y
 
 
 # Install and setip VulnWhisperer
 cd /opt
 git clone https://github.com/HASecuritySolutions/VulnWhisperer.git
 cd /opt/VulnWhisperer
-pip install -r /opt/VulnWhisperer/requirements.txt
+pip3 install nympy pytz
+pip3 install -r /opt/VulnWhisperer/requirements.txt
 python setup.py install
 
 

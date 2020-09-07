@@ -1,4 +1,4 @@
-# VulWisperer install for ubuntu 18.04 and openvas
+# VulWisperer install for ubuntu 18.04 Upgraded may work Ubuntu 2020 and openvas
 This will install the vilWisperer on a ubuntu 18.04 server.
 Config to connect to a openvas server to get reports and save to local disk.
 
